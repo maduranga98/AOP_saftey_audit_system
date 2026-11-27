@@ -78,3 +78,89 @@ export interface ConfigChecklists {
 }
 
 export type ScoreValue = 0 | 0.25 | 0.5 | 0.75 | 1;
+
+export const MAX_PHOTOS_PER_ITEM = 5;
+
+/** One observation inside an audit, with a copy of the text it was scored against. */
+export interface AuditItem {
+  obsId: string;
+  no: number;
+  text: string;
+  score: ScoreValue | null;
+  na: boolean;
+  remark: string;
+  /** Storage paths of full-size photos. The thumbnail is the same path with a `_t` suffix. */
+  photos: string[];
+}
+
+/** An audit in progress, kept only on the device. */
+export interface AuditDraft {
+  id: string;
+  uid: string;
+  subAreaId: string;
+  startedAt: number;
+  updatedAt: number;
+  items: AuditItem[];
+}
+
+export interface AuditTotals {
+  scoredSum: number;
+  applicable: number;
+  naCount: number;
+  belowOneCount: number;
+  photoCount: number;
+  pct: number | null;
+}
+
+/** audits/{id}: written once by the auditor's device. */
+export interface AuditDoc extends AuditTotals {
+  id: string;
+  month: string;
+  date: string;
+  areaId: string;
+  areaName: string;
+  subAreaId: string;
+  subAreaName: string;
+  auditorUid: string;
+  auditorName: string;
+  auditorEmpNo: string;
+  ownerIds: string[];
+  ownerNames: string[];
+  managerIds: string[];
+  managerNames: string[];
+  assigneeIds: string[];
+  contractors: { name: string; scope: string }[];
+  items: AuditItem[];
+  startedAt: number;
+  clientSubmittedAt: number;
+  submittedAt?: unknown;
+  appVersion: string;
+  voided?: boolean;
+  voidReason?: string;
+}
+
+export type ActionStatus = 'open' | 'closed';
+
+/** actions/{auditId}_{obsId}: one per observation scored below 1. */
+export interface ActionDoc {
+  id: string;
+  auditId: string;
+  month: string;
+  areaId: string;
+  areaName: string;
+  subAreaId: string;
+  subAreaName: string;
+  obsId: string;
+  obsNo: number;
+  obsText: string;
+  score: ScoreValue;
+  remark: string;
+  photos: string[];
+  raisedBy: string;
+  raisedByName: string;
+  raisedAt?: unknown;
+  assigneeIds: string[];
+  status: ActionStatus;
+  response?: { comment: string; photos: string[]; byUid: string; byName: string; at: unknown };
+  closedAt?: unknown;
+}

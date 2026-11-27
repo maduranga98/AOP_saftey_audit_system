@@ -82,3 +82,29 @@ export const WrenchIcon = (p: P) => (
     <path d="M14.7 6.3a4 4 0 0 0 5 5L22 14l-8 8-2.3-2.3a4 4 0 0 0-5-5L4 12l8-8z" />
   </svg>
 );
+export const CameraIcon = (p: P) => (
+  <svg {...base(p)}>
+    <path d="M14.5 4h-5L7.5 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3.5z" />
+    <circle cx="12" cy="13" r="3.5" />
+  </svg>
+);
+export const TrashIcon = (p: P) => (
+  <svg {...base(p)}>
+    <path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14" />
+  </svg>
+);
+export const AlertIcon = (p: P) => (
+  <svg {...base(p)}>
+    <path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0" />
+  </svg>
+);
+export const UploadIcon = (p: P) => (
+  <svg {...base(p)}>
+    <path d="M12 16V4M7 9l5-5 5 5M4 20h16" />
+  </svg>
+);
+export const ArrowLeftIcon = (p: P) => (
+  <svg {...base(p)}>
+    <path d="M19 12H5M12 19l-7-7 7-7" />
+  </svg>
+);
