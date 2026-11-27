@@ -6,7 +6,9 @@ import { HttpsError, type CallableRequest } from 'firebase-functions/v2/https';
 if (getApps().length === 0) initializeApp();
 
 export const auth = getAuth();
-export const db = getFirestore();
+/** Must match "firestore.database" in firebase.json. Set in functions/.env. */
+export const DATABASE_ID = process.env.FIRESTORE_DATABASE_ID || '(default)';
+export const db = DATABASE_ID === '(default)' ? getFirestore() : getFirestore(DATABASE_ID);
 
 export type Role = 'admin' | 'auditor' | 'area';
 export const ROLES: Role[] = ['admin', 'auditor', 'area'];

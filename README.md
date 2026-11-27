@@ -69,6 +69,17 @@ cp .firebaserc.example .firebaserc     # set your project id
 cp .env.example .env                   # paste the web app config
 ```
 
+The app uses the named Firestore database **`aop-safety-audit-system`** (see `firebase.json`). The same ID is
+set in `.env` (`VITE_FIRESTORE_DATABASE_ID`), `functions/.env` (`FIRESTORE_DATABASE_ID`) and the GitHub
+workflows. Change all four together if the database changes.
+
+### GitHub Actions secrets
+
+The hosting workflows build the app, so add these repository secrets (Settings → Secrets and variables →
+Actions) with the values from `.env`: `VITE_FIREBASE_API_KEY`, `VITE_FIREBASE_AUTH_DOMAIN`,
+`VITE_FIREBASE_PROJECT_ID`, `VITE_FIREBASE_STORAGE_BUCKET`, `VITE_FIREBASE_MESSAGING_SENDER_ID`,
+`VITE_FIREBASE_APP_ID`. Merges to `main` deploy hosting; rules and functions are deployed with the CLI.
+
 ### 3. Deploy rules, indexes and functions
 
 ```bash
@@ -82,7 +93,7 @@ Project settings → Service accounts → **Generate new private key**, save it 
 
 ```bash
 GOOGLE_APPLICATION_CREDENTIALS=scripts/service-account.json \
-npm run seed -- --project <project-id> --admin-emp EMP001 --admin-name "Safety Officer" --admin-pin 123456
+npm run seed -- --project <project-id> --database aop-safety-audit-system --admin-emp EMP001 --admin-name "Safety Officer" --admin-pin 123456
 ```
 
 Re-running is safe: existing setup is skipped unless you pass `--force`.

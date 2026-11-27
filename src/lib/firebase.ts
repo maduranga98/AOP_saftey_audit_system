@@ -31,9 +31,13 @@ export const auth = initializeAuth(app, {
 });
 
 /** Persistent cache: setup data and recent records are readable with no signal, and cache reads are free. */
-export const db = initializeFirestore(app, {
-  localCache: persistentLocalCache({ tabManager: persistentMultipleTabManager() }),
-});
+export const FIRESTORE_DATABASE_ID = env.VITE_FIRESTORE_DATABASE_ID || '(default)';
+
+export const db = initializeFirestore(
+  app,
+  { localCache: persistentLocalCache({ tabManager: persistentMultipleTabManager() }) },
+  FIRESTORE_DATABASE_ID,
+);
 
 export const functions = getFunctions(app, env.VITE_FUNCTIONS_REGION || 'asia-south1');
 export const storage = getStorage(app);

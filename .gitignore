@@ -7,3 +7,4 @@ functions/node_modules
 scripts/service-account.json
 .firebase
 *.log
+!functions/.env
