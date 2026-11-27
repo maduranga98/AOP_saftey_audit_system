@@ -18,7 +18,7 @@ const MIN_COMMENT = 5;
 
 const toMillis = (ts: unknown) => (ts as { toMillis?: () => number } | null)?.toMillis?.() ?? null;
 
-export default function ActionDetail() {
+export default function ActionDetail({ base = '/area' }: { base?: '/area' | '/admin' }) {
   const { actionId = '' } = useParams();
   const navigate = useNavigate();
   const { uid, name } = useAuth();
@@ -52,11 +52,11 @@ export default function ActionDetail() {
   }, [actionId, comment]);
 
   if (action === undefined) return <FullScreenSpinner />;
-  if (action === null) return <EmptyState title="Action not available" body="It may have been removed, or you don't have access." action={<Link to="/area" className="text-sm font-medium underline">Back</Link>} />;
+  if (action === null) return <EmptyState title="Action not available" body="It may have been removed, or you don't have access." action={<Link to={base} className="text-sm font-medium underline">Back</Link>} />;
 
   const isPending = pending.has(action.id);
-  const isClosed = action.status === 'closed';
-  const canRespond = !isClosed && !isPending && uid !== null && action.assigneeIds.includes(uid);
+  const isClosed = action.status !== 'open';
+  const canRespond = base === '/area' && !isClosed && !isPending && uid !== null && action.assigneeIds.includes(uid);
   const commentOk = comment.trim().length >= MIN_COMMENT;
   const photosOk = photos.length >= 1;
   const age = ageDays(action.raisedAt);
@@ -98,7 +98,7 @@ export default function ActionDetail() {
 
   return (
     <div className="space-y-5 pb-8">
-      <Link to="/area" className="flex items-center gap-1.5 text-sm text-slate-500 hover:text-slate-900">
+      <Link to={base === '/admin' ? '/admin/actions' : '/area'} className="flex items-center gap-1.5 text-sm text-slate-500 hover:text-slate-900">
         <ArrowLeftIcon width={16} height={16} /> Back
       </Link>
 
@@ -108,7 +108,9 @@ export default function ActionDetail() {
         </p>
         <div className="mt-1 flex flex-wrap items-center gap-2">
           <h1 className="text-xl font-semibold tracking-tight">Corrective action</h1>
-          {isClosed ? (
+          {action.status === 'void' ? (
+            <Badge>Void (audit withdrawn)</Badge>
+          ) : isClosed ? (
             <Badge className="bg-green-50 text-green-700 ring-green-600/20">Closed</Badge>
           ) : isPending ? (
             <Badge className="bg-sky-50 text-sky-700 ring-sky-600/20">Waiting to upload</Badge>
@@ -138,7 +140,7 @@ export default function ActionDetail() {
           <p className="text-sm text-slate-800">{action.remark}</p>
           <PhotoStrip paths={action.photos} />
         </div>
-        <Link to={`/area/audit/${action.auditId}`} className="inline-block text-xs font-medium text-slate-600 hover:underline">
+        <Link to={base === '/admin' ? `/admin/audits/${action.auditId}` : `/area/audit/${action.auditId}`} className="inline-block text-xs font-medium text-slate-600 hover:underline">
           View the full audit
         </Link>
       </Card>

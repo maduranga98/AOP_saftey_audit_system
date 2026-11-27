@@ -30,6 +30,8 @@ export interface Area {
   id: string;
   name: string;
   order: number;
+  /** Hidden areas (and their sub-areas) disappear from pickers; past audits keep them. */
+  active?: boolean;
 }
 
 export interface ContractorLink {
@@ -143,7 +145,7 @@ export interface AuditDoc extends AuditTotals {
   voidReason?: string;
 }
 
-export type ActionStatus = 'open' | 'closed';
+export type ActionStatus = 'open' | 'closed' | 'void';
 
 /** actions/{auditId}_{obsId}: one per observation scored below 1. */
 export interface ActionDoc {

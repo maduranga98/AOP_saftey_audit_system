@@ -24,7 +24,7 @@ export default function ClosedActions() {
           {actions.map((a) => (
             <div key={a.id}>
               <p className="px-4 pt-3 text-xs font-medium text-slate-500">{a.subAreaName}</p>
-              <ActionRow action={a} to={`/area/action/${a.id}`} />
+              <ActionRow action={a} to={`/area/action/${a.id}`} closed />
             </div>
           ))}
         </Card>

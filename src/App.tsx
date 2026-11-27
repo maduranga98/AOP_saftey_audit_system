@@ -6,7 +6,7 @@ import { AppShell, type NavItem } from '@/components/AppShell';
 import { RequireRole } from '@/components/RequireRole';
 import { SyncEngine } from '@/components/SyncEngine';
 import { FullScreenSpinner } from '@/components/ui';
-import { HomeIcon, MapIcon, UsersIcon } from '@/components/icons';
+import { ClipboardIcon, HomeIcon, MapIcon, SettingsIcon, UsersIcon, WrenchIcon } from '@/components/icons';
 import Landing from '@/pages/Landing';
 import Login from '@/pages/auth/Login';
 import Setup from '@/pages/auth/Setup';
@@ -21,11 +21,19 @@ const ClosedActions = lazy(() => import('@/pages/area/ClosedActions'));
 const AdminOverview = lazy(() => import('@/pages/admin/AdminOverview'));
 const Areas = lazy(() => import('@/pages/admin/Areas'));
 const Users = lazy(() => import('@/pages/admin/Users'));
+const SubAreaEditor = lazy(() => import('@/pages/admin/SubAreaEditor'));
+const Settings = lazy(() => import('@/pages/admin/Settings'));
+const Audits = lazy(() => import('@/pages/admin/Audits'));
+const AdminAuditDetail = lazy(() => import('@/pages/admin/AdminAuditDetail'));
+const Actions = lazy(() => import('@/pages/admin/Actions'));
 
 const ADMIN_NAV: NavItem[] = [
   { to: '/admin', label: 'Overview', icon: HomeIcon, end: true },
+  { to: '/admin/audits', label: 'Audits', icon: ClipboardIcon },
+  { to: '/admin/actions', label: 'Actions', icon: WrenchIcon },
   { to: '/admin/areas', label: 'Areas', icon: MapIcon },
   { to: '/admin/users', label: 'Users', icon: UsersIcon },
+  { to: '/admin/settings', label: 'Settings', icon: SettingsIcon },
 ];
 
 export default function App() {
@@ -83,7 +91,13 @@ export default function App() {
                     <AppShell portal="admin" nav={ADMIN_NAV}>
                       <Routes>
                         <Route index element={<AdminOverview />} />
+                        <Route path="audits" element={<Audits />} />
+                        <Route path="audits/:auditId" element={<AdminAuditDetail />} />
+                        <Route path="actions" element={<Actions />} />
+                        <Route path="actions/:actionId" element={<ActionDetail base="/admin" />} />
                         <Route path="areas" element={<Areas />} />
+                        <Route path="areas/:subAreaId" element={<SubAreaEditor />} />
+                        <Route path="settings" element={<Settings />} />
                         <Route path="users" element={<Users />} />
                         <Route path="*" element={<Navigate to="/admin" replace />} />
                       </Routes>
