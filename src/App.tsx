@@ -4,13 +4,16 @@ import { AuthProvider } from '@/contexts/AuthContext';
 import { ConfigProvider } from '@/contexts/ConfigContext';
 import { AppShell, type NavItem } from '@/components/AppShell';
 import { RequireRole } from '@/components/RequireRole';
+import { SyncEngine } from '@/components/SyncEngine';
 import { FullScreenSpinner } from '@/components/ui';
 import { HomeIcon, MapIcon, UsersIcon } from '@/components/icons';
 import Landing from '@/pages/Landing';
 import Login from '@/pages/auth/Login';
 
 const AuditHome = lazy(() => import('@/pages/audit/AuditHome'));
-const SubAreaChecklist = lazy(() => import('@/pages/audit/SubAreaChecklist'));
+const SubAreaStart = lazy(() => import('@/pages/audit/SubAreaStart'));
+const AuditForm = lazy(() => import('@/pages/audit/AuditForm'));
+const AuditDetail = lazy(() => import('@/pages/audit/AuditDetail'));
 const AreaHome = lazy(() => import('@/pages/area/AreaHome'));
 const AdminOverview = lazy(() => import('@/pages/admin/AdminOverview'));
 const Areas = lazy(() => import('@/pages/admin/Areas'));
@@ -27,6 +30,7 @@ export default function App() {
     <BrowserRouter>
       <AuthProvider>
         <ConfigProvider>
+          <SyncEngine />
           <Suspense fallback={<FullScreenSpinner />}>
             <Routes>
               <Route path="/" element={<Landing />} />
@@ -39,7 +43,9 @@ export default function App() {
                     <AppShell portal="audit">
                       <Routes>
                         <Route index element={<AuditHome />} />
-                        <Route path="sub-area/:subAreaId" element={<SubAreaChecklist />} />
+                        <Route path="sub-area/:subAreaId" element={<SubAreaStart />} />
+                        <Route path="form/:draftId" element={<AuditForm />} />
+                        <Route path="view/:auditId" element={<AuditDetail />} />
                         <Route path="*" element={<Navigate to="/audit" replace />} />
                       </Routes>
                     </AppShell>
