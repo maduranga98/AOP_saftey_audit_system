@@ -2,7 +2,7 @@ import { localDb, type AuditSubmission } from './localdb';
 import { dateKey, monthKey } from './dates';
 import type { ActionDoc, AuditDoc, AuditDraft, AuditItem, AuditTotals, ConfigMain } from '@/types';
 
-export const APP_VERSION = '0.2.0';
+export const APP_VERSION = '0.3.0';
 
 export type ItemProblem = 'score' | 'remark';
 

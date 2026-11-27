@@ -4,3 +4,4 @@ import { setGlobalOptions } from 'firebase-functions/v2';
 setGlobalOptions({ region: 'asia-south1', maxInstances: 5, memory: '256MiB' });
 
 export { setupFirstAdmin, createUser, updateUser, resetCredential } from './users';
+export { onConfigMainUpdated } from './assignments';

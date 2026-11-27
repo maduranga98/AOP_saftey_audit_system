@@ -16,6 +16,8 @@ const SubAreaStart = lazy(() => import('@/pages/audit/SubAreaStart'));
 const AuditForm = lazy(() => import('@/pages/audit/AuditForm'));
 const AuditDetail = lazy(() => import('@/pages/audit/AuditDetail'));
 const AreaHome = lazy(() => import('@/pages/area/AreaHome'));
+const ActionDetail = lazy(() => import('@/pages/area/ActionDetail'));
+const ClosedActions = lazy(() => import('@/pages/area/ClosedActions'));
 const AdminOverview = lazy(() => import('@/pages/admin/AdminOverview'));
 const Areas = lazy(() => import('@/pages/admin/Areas'));
 const Users = lazy(() => import('@/pages/admin/Users'));
@@ -62,6 +64,9 @@ export default function App() {
                     <AppShell portal="area">
                       <Routes>
                         <Route index element={<AreaHome />} />
+                        <Route path="action/:actionId" element={<ActionDetail />} />
+                        <Route path="closed" element={<ClosedActions />} />
+                        <Route path="audit/:auditId" element={<AuditDetail backTo="/area" />} />
                         <Route path="*" element={<Navigate to="/area" replace />} />
                       </Routes>
                     </AppShell>
