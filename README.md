@@ -15,8 +15,12 @@ Storage, Functions, Hosting).
 | `/area` | Area owners and managers | `area` |
 | `/admin` | Safety officer | `admin` |
 
-Everyone signs in with an **employee number + 6-digit PIN**. Behind the scenes `EMP1024` is the Firebase
-Auth user `emp1024@aop.internal`. Only the safety officer creates accounts.
+- **Safety officers** sign in at `/admin` with **email + password** (Forgot password sends a reset email).
+- **Auditors and area owners/managers** sign in at their own link with **employee number + 6-digit PIN**.
+  Behind the scenes `EMP1024` is the Firebase Auth user `emp1024@aop.internal`.
+- There is no public sign-up. The **first safety officer** is created once at `/admin/setup` with a setup
+  code; after that, safety officers add every other user (including other safety officers) on the Users
+  page, which also has copyable sign-in links to send to staff.
 
 ## Project layout
 
@@ -26,7 +30,7 @@ src/
   lib/          firebase init, identity, scoring, callables, local IndexedDB (drafts/outbox)
   components/   AppShell, SyncBar, RequireRole, pickers, UI kit
   pages/        audit/, area/, admin/, auth/
-functions/src/  Cloud Functions: createUser, updateUser, resetPin
+functions/src/  Cloud Functions: setupFirstAdmin, createUser, updateUser, resetCredential
 scripts/seed.mjs  one-time import of plant setup + first safety officer
 seed/aop-seed.json  areas, sub-areas, contractors, observations from the current workbook
 firestore.rules, storage.rules, firestore.indexes.json
@@ -86,19 +90,29 @@ Actions) with the values from `.env`: `VITE_FIREBASE_API_KEY`, `VITE_FIREBASE_AU
 firebase deploy --only firestore,storage,functions
 ```
 
-### 4. Import the plant setup and create the first safety officer
+On the first functions deploy the CLI asks for **`ADMIN_SETUP_CODE`**: choose a one-time code (e.g. 12
+random characters). It is saved in `functions/.env.<project-id>` (git-ignored) and is needed once, at
+`/admin/setup`.
+
+### 4. Import the plant setup
 
 Project settings → Service accounts → **Generate new private key**, save it as
 `scripts/service-account.json` (git-ignored). Then:
 
 ```bash
 GOOGLE_APPLICATION_CREDENTIALS=scripts/service-account.json \
-npm run seed -- --project <project-id> --database aop-safety-audit-system --admin-emp EMP001 --admin-name "Safety Officer" --admin-pin 123456
+npm run seed -- --project <project-id> --database aop-safety-audit-system
 ```
 
 Re-running is safe: existing setup is skipped unless you pass `--force`.
 
-### 5. Run and deploy the app
+### 5. Create the first safety officer
+
+Open `https://<your-site>/admin/setup`, enter name, email, password and the setup code. The page closes
+for good once the first safety officer exists. (Alternatively pass `--admin-email`, `--admin-name` and
+`--admin-password` to the seed script.)
+
+### 6. Run and deploy the app
 
 ```bash
 npm run dev          # local, http://localhost:5173/admin
@@ -109,14 +123,14 @@ npm run deploy       # build + firebase deploy (hosting, rules, functions)
 
 ```bash
 firebase emulators:start
-npm run seed -- --project demo-aop --emulator --admin-emp EMP001 --admin-pin 123456
+npm run seed -- --project demo-aop --emulator --admin-email so@example.com --admin-password password123
 VITE_USE_EMULATORS=true npm run dev
 ```
 
 ## Build phases
 
 - [x] **1. Foundation** — auth, roles, links, rules, user functions, PWA shell, workbook import, owner/manager assignment
-- [ ] **2. Auditor app** — scoring form, device drafts, photo compression, outbox sync
+- [x] **2. Auditor app** — scoring form, device drafts, photo compression, outbox sync
 - [ ] **3. Area owner / manager** — open actions, photo proof, audit view
 - [ ] **4. Safety officer admin** — observation and contractor editor, audit list, view and share
 - [ ] **5. Dashboard and export** — summary functions, charts, Excel export in the current layout

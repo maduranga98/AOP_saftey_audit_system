@@ -13,9 +13,11 @@ export const db = DATABASE_ID === '(default)' ? getFirestore() : getFirestore(DA
 export type Role = 'admin' | 'auditor' | 'area';
 export const ROLES: Role[] = ['admin', 'auditor', 'area'];
 
+/** Directory entry. Staff accounts have an empNo (PIN sign-in); safety officers have an email. */
 export interface Person {
   uid: string;
   empNo: string;
+  email?: string;
   name: string;
   roles: Role[];
   active: boolean;
@@ -24,6 +26,33 @@ export interface Person {
 export const EMAIL_DOMAIN = 'aop.internal';
 export const PIN_RE = /^\d{6}$/;
 export const EMP_RE = /^[A-Z0-9-]{2,20}$/;
+
+export const isPinEmail = (email: string | undefined): boolean => !!email && email.endsWith(`@${EMAIL_DOMAIN}`);
+
+export function parseEmail(v: unknown): string {
+  const email = String(v ?? '').trim().toLowerCase();
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || email.endsWith(`@${EMAIL_DOMAIN}`)) {
+    throw new HttpsError('invalid-argument', 'Enter a valid email address.');
+  }
+  return email;
+}
+
+export function parsePassword(v: unknown): string {
+  const pw = String(v ?? '');
+  if (pw.length < 8 || pw.length > 128) throw new HttpsError('invalid-argument', 'Password must be at least 8 characters.');
+  return pw;
+}
+
+/** Throws already-exists if an Auth account uses this email. */
+export async function assertEmailFree(email: string, label: string): Promise<void> {
+  try {
+    await auth.getUserByEmail(email);
+    throw new HttpsError('already-exists', `${label} already has an account.`);
+  } catch (err) {
+    if (err instanceof HttpsError) throw err;
+    if ((err as { code?: string }).code !== 'auth/user-not-found') throw err;
+  }
+}
 
 export const normalizeEmpNo = (v: unknown): string => String(v ?? '').trim().toUpperCase().replace(/\s+/g, '');
 export const empNoToEmail = (empNo: string): string => `${empNo.toLowerCase()}@${EMAIL_DOMAIN}`;

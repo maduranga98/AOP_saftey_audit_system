@@ -1,5 +1,6 @@
 import { useLiveQuery } from 'dexie-react-hooks';
 import { localDb } from '@/lib/localdb';
+import { requestSync } from '@/lib/sync';
 import { useOnline } from '@/hooks/useOnline';
 import { useAuth } from '@/contexts/AuthContext';
 import { CloudOffIcon } from './icons';
@@ -8,11 +9,22 @@ import { CloudOffIcon } from './icons';
 export function SyncBar() {
   const online = useOnline();
   const { uid } = useAuth();
-  const pending = useLiveQuery(() => (uid ? localDb.outbox.where('uid').equals(uid).count() : 0), [uid], 0);
+  const items = useLiveQuery(() => (uid ? localDb.outbox.where('uid').equals(uid).toArray() : []), [uid], []);
+  const pending = items.length;
+  const failing = items.find((i) => i.attempts >= 2 && i.lastError);
 
   if (online && pending === 0) return null;
 
   const waiting = pending === 1 ? '1 item waiting to upload' : `${pending} items waiting to upload`;
+
+  if (online && failing) {
+    return (
+      <button onClick={requestSync} className="block w-full bg-red-50 px-4 py-1.5 text-center text-xs font-medium text-red-700" role="status">
+        {failing.label}: {failing.lastError} · Tap to retry
+      </button>
+    );
+  }
+
   return (
     <div
       className={

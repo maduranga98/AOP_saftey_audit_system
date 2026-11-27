@@ -2,12 +2,10 @@ import { httpsCallable } from 'firebase/functions';
 import { functions } from './firebase';
 import type { Role } from '@/types';
 
-export interface CreateUserInput {
-  empNo: string;
-  name: string;
-  roles: Role[];
-  pin: string;
-}
+/** Safety officers: email + password. Everyone else: employee number + PIN. */
+export type CreateUserInput =
+  | { name: string; roles: Role[]; email: string; password: string }
+  | { name: string; roles: Role[]; empNo: string; pin: string };
 
 export interface UpdateUserInput {
   uid: string;
@@ -23,7 +21,9 @@ const call =
 
 export const createUser = call<CreateUserInput, { ok: true; uid: string }>('createUser');
 export const updateUser = call<UpdateUserInput>('updateUser');
-export const resetPin = call<{ uid: string; pin: string }>('resetPin');
+/** New PIN for staff accounts, new password for safety officer accounts. */
+export const resetCredential = call<{ uid: string; secret: string }>('resetCredential');
+export const setupFirstAdmin = call<{ name: string; email: string; password: string; setupCode: string }>('setupFirstAdmin');
 
 /** Turns Firebase callable errors into a message a user can act on. */
 export function callableMessage(err: unknown): string {

@@ -19,6 +19,12 @@ service cloud.firestore {
       allow write: if isAdmin() && docId in ['main', 'checklists'];
     }
 
+    // Public, read-only status (e.g. whether first-run setup is done). Written by functions only.
+    match /public/{docId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
     // User records are managed only by Cloud Functions.
     match /users/{uid} {
       allow read: if signedIn() && (request.auth.uid == uid || isAdmin());
