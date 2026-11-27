@@ -9,6 +9,7 @@ import { FullScreenSpinner } from '@/components/ui';
 import { HomeIcon, MapIcon, UsersIcon } from '@/components/icons';
 import Landing from '@/pages/Landing';
 import Login from '@/pages/auth/Login';
+import Setup from '@/pages/auth/Setup';
 
 const AuditHome = lazy(() => import('@/pages/audit/AuditHome'));
 const SubAreaStart = lazy(() => import('@/pages/audit/SubAreaStart'));
@@ -69,6 +70,7 @@ export default function App() {
               />
 
               <Route path="/admin/login" element={<Login portal="admin" />} />
+              <Route path="/admin/setup" element={<Setup />} />
               <Route
                 path="/admin/*"
                 element={

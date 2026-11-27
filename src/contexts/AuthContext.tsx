@@ -1,17 +1,28 @@
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
-import { onAuthStateChanged, signInWithEmailAndPassword, signOut as fbSignOut, type User } from 'firebase/auth';
+import {
+  onAuthStateChanged,
+  sendPasswordResetEmail,
+  signInWithEmailAndPassword,
+  signOut as fbSignOut,
+  type User,
+} from 'firebase/auth';
 import { auth } from '@/lib/firebase';
-import { emailToEmpNo, empNoToEmail } from '@/lib/identity';
+import { emailToEmpNo, empNoToEmail, isPinAccountEmail } from '@/lib/identity';
 import type { Role } from '@/types';
 
 interface Session {
   user: User | null;
   uid: string | null;
   empNo: string;
+  email: string;
+  /** Employee number for staff accounts, email for safety officers. */
+  login: string;
   name: string;
   roles: Role[];
   loading: boolean;
   signIn: (empNo: string, pin: string) => Promise<Role[]>;
+  signInWithEmail: (email: string, password: string) => Promise<Role[]>;
+  sendPasswordReset: (email: string) => Promise<void>;
   signOut: () => Promise<void>;
   refreshRoles: () => Promise<void>;
 }
@@ -58,7 +69,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       user,
       uid: user?.uid ?? null,
       empNo: emailToEmpNo(user?.email),
-      name: user?.displayName || emailToEmpNo(user?.email),
+      email: user?.email && !isPinAccountEmail(user.email) ? user.email : '',
+      login: isPinAccountEmail(user?.email) ? emailToEmpNo(user?.email) : user?.email ?? '',
+      name: user?.displayName || emailToEmpNo(user?.email) || user?.email || '',
       roles,
       loading,
       async signIn(empNo, pin) {
@@ -66,6 +79,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         const r = await loadRoles(cred.user, true);
         setRoles(r);
         return r;
+      },
+      async signInWithEmail(email, password) {
+        const cred = await signInWithEmailAndPassword(auth, email.trim().toLowerCase(), password);
+        const r = await loadRoles(cred.user, true);
+        setRoles(r);
+        return r;
+      },
+      async sendPasswordReset(email) {
+        await sendPasswordResetEmail(auth, email.trim().toLowerCase());
       },
       async signOut() {
         if (user) localStorage.removeItem(rolesKey(user.uid));

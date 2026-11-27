@@ -13,10 +13,14 @@ export const ROLE_LABEL: Record<Role, string> = {
   area: 'Area owner / manager',
 };
 
-/** Directory entry kept in config/main so names resolve without extra reads. */
+/**
+ * Directory entry kept in config/main so names resolve without extra reads.
+ * Staff (auditors, area owners/managers) sign in with empNo + PIN; safety officers with email.
+ */
 export interface Person {
   uid: string;
   empNo: string;
+  email?: string;
   name: string;
   roles: Role[];
   active: boolean;

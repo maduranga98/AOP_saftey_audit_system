@@ -3,7 +3,9 @@
  * One-time setup: loads plant setup from seed/aop-seed.json and creates the first safety officer.
  *
  *   GOOGLE_APPLICATION_CREDENTIALS=scripts/service-account.json \
- *   node scripts/seed.mjs --project <project-id> --admin-emp EMP001 --admin-name "Safety Officer" --admin-pin 123456
+ *   node scripts/seed.mjs --project <project-id> [--admin-email so@plant.lk --admin-name "Safety Officer" --admin-password ********]
+ *
+ * Without --admin-email, create the first safety officer at /admin/setup with the setup code.
  *
  * Options:
  *   --force        overwrite config/main areas, sub-areas, contractors and config/checklists if they exist
@@ -75,33 +77,32 @@ async function seedConfig() {
 }
 
 async function seedAdmin() {
-  if (!args['admin-emp']) {
-    console.log('• No --admin-emp given. Skipping first safety officer.');
+  if (!args['admin-email']) {
+    console.log('• No --admin-email given. Create the first safety officer at /admin/setup instead.');
     return;
   }
-  const empNo = String(args['admin-emp']).trim().toUpperCase().replace(/\s+/g, '');
+  const email = String(args['admin-email']).trim().toLowerCase();
   const name = String(args['admin-name'] || 'Safety Officer').trim();
-  const pin = String(args['admin-pin'] || '');
-  if (!/^[A-Z0-9-]{2,20}$/.test(empNo)) fail('Employee number: 2–20 letters, digits or dashes.');
-  if (!/^\d{6}$/.test(pin)) fail('--admin-pin must be 6 digits.');
+  const password = String(args['admin-password'] || '');
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) fail('--admin-email is not a valid email.');
+  if (password.length < 8) fail('--admin-password must be at least 8 characters.');
 
-  const email = `${empNo.toLowerCase()}@aop.internal`;
   let user;
   try {
     user = await auth.getUserByEmail(email);
-    await auth.updateUser(user.uid, { password: pin, displayName: name, disabled: false });
-    console.log(`• ${empNo} already exists. PIN and name updated.`);
+    await auth.updateUser(user.uid, { password, displayName: name, disabled: false });
+    console.log(`• ${email} already exists. Password and name updated.`);
   } catch (e) {
     if (e.code !== 'auth/user-not-found') throw e;
-    user = await auth.createUser({ email, password: pin, displayName: name, emailVerified: true });
-    console.log(`✔ Created ${empNo}.`);
+    user = await auth.createUser({ email, password, displayName: name });
+    console.log(`✔ Created ${email}.`);
   }
 
   const existing = (await auth.getUser(user.uid)).customClaims?.roles ?? [];
   const roles = [...new Set([...existing, 'admin'])];
   await auth.setCustomUserClaims(user.uid, { roles });
 
-  const person = { uid: user.uid, empNo, name, roles, active: true };
+  const person = { uid: user.uid, empNo: '', email, name, roles, active: true };
   await db.doc(`users/${user.uid}`).set(
     { ...person, createdAt: FieldValue.serverTimestamp(), updatedAt: FieldValue.serverTimestamp(), createdBy: 'seed' },
     { merge: true },
@@ -113,7 +114,8 @@ async function seedAdmin() {
     const next = [...people.filter((p) => p.uid !== user.uid), person].sort((a, b) => a.name.localeCompare(b.name));
     tx.set(ref, { people: next }, { merge: true });
   });
-  console.log(`✔ ${name} (${empNo}) is a safety officer. Sign in at /admin.`);
+  await db.doc('public/status').set({ adminReady: true }, { merge: true });
+  console.log(`✔ ${name} (${email}) is a safety officer. Sign in at /admin.`);
 }
 
 try {

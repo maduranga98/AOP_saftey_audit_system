@@ -14,7 +14,7 @@ export interface NavItem {
 }
 
 export function AppShell({ portal, nav, children }: { portal: Portal; nav?: NavItem[]; children: ReactNode }) {
-  const { name, empNo, roles, signOut } = useAuth();
+  const { name, login, roles, signOut } = useAuth();
   const navigate = useNavigate();
   const otherPortals = (Object.keys(PORTALS) as Portal[]).filter((p) => p !== portal && roles.includes(PORTALS[p].role));
   const wide = portal === 'admin';
@@ -41,7 +41,7 @@ export function AppShell({ portal, nav, children }: { portal: Portal; nav?: NavI
             ))}
             <div className="hidden text-right leading-tight sm:block">
               <div className="text-sm font-medium">{name}</div>
-              <div className="text-xs text-slate-500">{empNo}</div>
+              <div className="text-xs text-slate-500">{login}</div>
             </div>
             <button onClick={onSignOut} className="ml-2 rounded-md p-2 text-slate-500 hover:bg-slate-100 hover:text-slate-900" aria-label="Sign out" title="Sign out">
               <LogOutIcon />

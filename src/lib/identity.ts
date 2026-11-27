@@ -20,6 +20,17 @@ export function empNoToEmail(empNo: string): string {
 }
 
 export function emailToEmpNo(email: string | null | undefined): string {
-  if (!email) return '';
+  if (!email || !email.endsWith(`@${EMAIL_DOMAIN}`)) return '';
   return email.split('@')[0].toUpperCase();
+}
+
+export const MIN_PASSWORD = 8;
+
+export function isValidEmail(email: string): boolean {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim()) && !email.trim().toLowerCase().endsWith(`@${EMAIL_DOMAIN}`);
+}
+
+/** True for staff accounts (employee number + PIN); false for email accounts. */
+export function isPinAccountEmail(email: string | null | undefined): boolean {
+  return !!email && email.endsWith(`@${EMAIL_DOMAIN}`);
 }
