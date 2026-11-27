@@ -116,7 +116,7 @@ VITE_USE_EMULATORS=true npm run dev
 ## Build phases
 
 - [x] **1. Foundation** — auth, roles, links, rules, user functions, PWA shell, workbook import, owner/manager assignment
-- [ ] **2. Auditor app** — scoring form, device drafts, photo compression, outbox sync
+- [x] **2. Auditor app** — scoring form, device drafts, photo compression, outbox sync
 - [ ] **3. Area owner / manager** — open actions, photo proof, audit view
 - [ ] **4. Safety officer admin** — observation and contractor editor, audit list, view and share
 - [ ] **5. Dashboard and export** — summary functions, charts, Excel export in the current layout

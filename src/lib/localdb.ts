@@ -1,33 +1,47 @@
 import Dexie, { type Table } from 'dexie';
+import type { ActionDoc, AuditDoc, AuditDraft } from '@/types';
 
-/** A queued upload: photos first, then Firestore documents. Filled by the audit and action flows. */
-export interface OutboxItem {
+export interface AuditSubmission {
+  audit: AuditDoc;
+  actions: ActionDoc[];
+}
+
+export interface ActionResponseSubmission {
+  actionId: string;
+  comment: string;
+  photos: string[];
+  byName: string;
+}
+
+/** A queued upload: photos first, then Firestore documents in one batch. */
+export type OutboxItem = {
   id: string;
-  kind: 'audit' | 'action-response';
   uid: string;
   createdAt: number;
   attempts: number;
   lastError?: string;
-  payload: unknown;
-}
+  /** Short label for the status list, e.g. "Kiln 1 audit". */
+  label: string;
+} & ({ kind: 'audit'; payload: AuditSubmission } | { kind: 'action-response'; payload: ActionResponseSubmission });
 
-/** An audit in progress. Saved on every tap so nothing is lost. */
+/** Draft records wrap the draft so the uid and sub-area can be indexed. */
 export interface DraftRecord {
   id: string;
   uid: string;
   subAreaId: string;
   updatedAt: number;
-  payload: unknown;
+  payload: AuditDraft;
 }
 
-/** Photo blobs waiting for upload, keyed by their final Storage path. */
+/** Photo blobs kept on the device until uploaded, keyed by their final Storage path. */
 export interface PhotoBlob {
   path: string;
-  outboxId: string | null;
   draftId: string | null;
+  outboxId: string | null;
   full: Blob;
   thumb: Blob;
   createdAt: number;
+  uploaded?: boolean;
 }
 
 class LocalDB extends Dexie {
@@ -46,3 +60,12 @@ class LocalDB extends Dexie {
 }
 
 export const localDb = new LocalDB();
+
+/** Ask the browser not to clear this data under storage pressure. */
+export async function requestPersistentStorage(): Promise<void> {
+  try {
+    if (navigator.storage?.persist && !(await navigator.storage.persisted())) await navigator.storage.persist();
+  } catch {
+    /* not supported: data is still kept in normal conditions */
+  }
+}
