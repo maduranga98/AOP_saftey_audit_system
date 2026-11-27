@@ -9,6 +9,7 @@
  *   --force        overwrite config/main areas, sub-areas, contractors and config/checklists if they exist
  *   --skip-config  only create the admin user
  *   --emulator     write to local emulators instead of the live project
+ *   --database     Firestore database ID (default: aop-safety-audit-system, or (default))
  */
 import { readFile } from 'node:fs/promises';
 import { initializeApp, applicationDefault } from 'firebase-admin/app';
@@ -38,7 +39,9 @@ if (args.emulator) {
 
 initializeApp({ projectId, ...(args.emulator ? {} : { credential: applicationDefault() }) });
 const auth = getAuth();
-const db = getFirestore();
+const databaseId = args.database || process.env.FIRESTORE_DATABASE_ID || 'aop-safety-audit-system';
+const db = databaseId === '(default)' ? getFirestore() : getFirestore(databaseId);
+console.log(`• Project ${projectId}, database ${databaseId}`);
 
 async function seedConfig() {
   const seed = JSON.parse(await readFile(new URL('../seed/aop-seed.json', import.meta.url), 'utf8'));
