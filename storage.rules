@@ -1,0 +1,36 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    function hasAnyRole() {
+      return request.auth != null && request.auth.token.roles is list && request.auth.token.roles.size() > 0;
+    }
+    function hasRole(r) {
+      return request.auth != null && request.auth.token.roles is list && r in request.auth.token.roles;
+    }
+    // Photos are compressed on the device to about 200 KB; 1 MB is a safe ceiling.
+    function isPhoto() {
+      return request.resource.contentType.matches('image/(jpeg|webp|png)')
+        && request.resource.size < 1024 * 1024;
+    }
+
+    // audits/{auditId}/{obsId}/{photoId}.webp and *_t.webp thumbnails
+    match /audits/{auditId}/{rest=**} {
+      allow read: if hasAnyRole();
+      allow create: if hasRole('auditor') && isPhoto();
+      allow update, delete: if false;
+    }
+
+    // actions/{actionId}/{photoId}.webp
+    match /actions/{actionId}/{rest=**} {
+      allow read: if hasAnyRole();
+      allow create: if hasRole('area') && isPhoto();
+      allow update, delete: if false;
+    }
+
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

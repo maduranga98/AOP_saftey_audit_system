@@ -1,0 +1,6126 @@
+{
+  "areas": [
+    {
+      "id": "crusher",
+      "name": "Crusher",
+      "order": 1
+    },
+    {
+      "id": "contractor-yard",
+      "name": "Contractor yard",
+      "order": 2
+    },
+    {
+      "id": "raw-mill",
+      "name": "Raw mill",
+      "order": 3
+    },
+    {
+      "id": "kiln",
+      "name": "Kiln",
+      "order": 4
+    },
+    {
+      "id": "coal-ar-feeding",
+      "name": "Coal & AR feeding",
+      "order": 5
+    },
+    {
+      "id": "roller-press",
+      "name": "Roller press",
+      "order": 6
+    },
+    {
+      "id": "cement-mill",
+      "name": "Cement mill",
+      "order": 7
+    },
+    {
+      "id": "cement-silos-belt",
+      "name": "Cement silos & belt",
+      "order": 8
+    },
+    {
+      "id": "gantry-yard-crane",
+      "name": "Gantry yard & crane",
+      "order": 9
+    },
+    {
+      "id": "pack-house",
+      "name": "Pack house",
+      "order": 10
+    },
+    {
+      "id": "palletizer-warehouse",
+      "name": "Palletizer warehouse",
+      "order": 11
+    },
+    {
+      "id": "mechanical-workshop",
+      "name": "Mechanical Workshop",
+      "order": 12
+    },
+    {
+      "id": "electrical-workshop",
+      "name": "Electrical Workshop",
+      "order": 13
+    },
+    {
+      "id": "shift-room",
+      "name": "Shift room",
+      "order": 14
+    },
+    {
+      "id": "lsrt",
+      "name": "LSRT",
+      "order": 15
+    },
+    {
+      "id": "maintenance-stores",
+      "name": "Maintenance Stores",
+      "order": 16
+    },
+    {
+      "id": "main-stores",
+      "name": "Main stores",
+      "order": 17
+    },
+    {
+      "id": "pump-house",
+      "name": "Pump house",
+      "order": 18
+    },
+    {
+      "id": "training-center",
+      "name": "Training center",
+      "order": 19
+    },
+    {
+      "id": "cement-lab",
+      "name": "Cement Lab",
+      "order": 20
+    },
+    {
+      "id": "site-lab",
+      "name": "Site lab",
+      "order": 21
+    },
+    {
+      "id": "transport-parking-area",
+      "name": "Transport parking area",
+      "order": 22
+    },
+    {
+      "id": "changing-rooms",
+      "name": "Changing rooms",
+      "order": 23
+    },
+    {
+      "id": "medical-center",
+      "name": "Medical Center",
+      "order": 24
+    },
+    {
+      "id": "main-canteen",
+      "name": "Main canteen",
+      "order": 25
+    },
+    {
+      "id": "scrap-yard",
+      "name": "Scrap yard",
+      "order": 26
+    },
+    {
+      "id": "shredder-area",
+      "name": "Shredder area",
+      "order": 27
+    },
+    {
+      "id": "oil-unloading-bay",
+      "name": "Oil unloading bay",
+      "order": 28
+    },
+    {
+      "id": "ali-yard",
+      "name": "Ali yard",
+      "order": 29
+    },
+    {
+      "id": "in-front-of-plant",
+      "name": "In front of plant",
+      "order": 30
+    },
+    {
+      "id": "general-administrative-area",
+      "name": "General administrative area",
+      "order": 31
+    },
+    {
+      "id": "project-office",
+      "name": "Project office",
+      "order": 32
+    },
+    {
+      "id": "old-electrical-room",
+      "name": "Old electrical room",
+      "order": 33
+    },
+    {
+      "id": "main-electrical-sub",
+      "name": "Main Electrical Sub",
+      "order": 34
+    }
+  ],
+  "subAreas": [
+    {
+      "id": "crusher-1",
+      "areaId": "crusher",
+      "name": "Crusher 1",
+      "order": 1,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "tasma-man-power",
+          "scope": "Tarpaulin rail wagons, crusher area cleaning, open yard belt operation"
+        },
+        {
+          "contractorId": "sd",
+          "scope": "Material heap covering"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "contractor-yard",
+      "areaId": "contractor-yard",
+      "name": "Contractor yard",
+      "order": 2,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "dm",
+          "scope": ""
+        },
+        {
+          "contractorId": "hansaka",
+          "scope": ""
+        },
+        {
+          "contractorId": "manuli",
+          "scope": ""
+        },
+        {
+          "contractorId": "re",
+          "scope": ""
+        },
+        {
+          "contractorId": "s-t",
+          "scope": ""
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "crusher-2",
+      "areaId": "crusher",
+      "name": "Crusher 2",
+      "order": 3,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "tasma-man-power",
+          "scope": "Tarpaulin rail wagons, crusher area cleaning, open yard belt operation"
+        },
+        {
+          "contractorId": "sd",
+          "scope": "Material heap covering"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "crusher-other",
+      "areaId": "crusher",
+      "name": "Crusher other",
+      "order": 4,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "tasma-machinery",
+          "scope": "Heavy machinery supply"
+        },
+        {
+          "contractorId": "sd",
+          "scope": "Material heap covering"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "raw-mill-1",
+      "areaId": "raw-mill",
+      "name": "Raw mill 1",
+      "order": 5,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "tasma-man-power",
+          "scope": "Raw mill operation: hopper chute cleaning, feeding, silo batch dropping, laterite feeding, area cleaning"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "raw-mill-2",
+      "areaId": "raw-mill",
+      "name": "Raw mill 2",
+      "order": 6,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "tasma-man-power",
+          "scope": "Raw mill operation: hopper chute cleaning, feeding, silo batch dropping, laterite feeding, area cleaning"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "kiln-1",
+      "areaId": "kiln",
+      "name": "Kiln 1",
+      "order": 7,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "sanu",
+          "scope": "Labour supply for kiln, coal mill and PH cleaning"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "kiln-2",
+      "areaId": "kiln",
+      "name": "Kiln 2",
+      "order": 8,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "sanu",
+          "scope": "Labour supply for kiln, coal mill and PH cleaning"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "coal-ar-feeding",
+      "areaId": "coal-ar-feeding",
+      "name": "Coal & AR feeding",
+      "order": 9,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "aponsu",
+          "scope": "Biomass feeding system, back end feeding"
+        },
+        {
+          "contractorId": "sm-eco",
+          "scope": "Coal heaping, feeding, material handling, tractor for kiln/coal mill transport"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "roller-press",
+      "areaId": "roller-press",
+      "name": "Roller press",
+      "order": 10,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "tasma-machinery",
+          "scope": "Heavy machinery supply"
+        },
+        {
+          "contractorId": "tasma-man-power",
+          "scope": "Cleaning of roller press area"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "cement-mill",
+      "areaId": "cement-mill",
+      "name": "Cement mill",
+      "order": 11,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "tasma-man-power",
+          "scope": "Cleaning of cement mill areas"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "cement-silos-belt",
+      "areaId": "cement-silos-belt",
+      "name": "Cement silos & belt",
+      "order": 12,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "tasma-man-power",
+          "scope": "Cleaning of silo top area and belt"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "gantry-yard-crane",
+      "areaId": "gantry-yard-crane",
+      "name": "Gantry yard & crane",
+      "order": 13,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "tasma-man-power",
+          "scope": "Overhead crane and gantry yard"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "pack-house-1",
+      "areaId": "pack-house",
+      "name": "Pack house 1",
+      "order": 14,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "tasma-man-power",
+          "scope": "Packhouse operation manpower"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "pack-house-2",
+      "areaId": "pack-house",
+      "name": "Pack house 2",
+      "order": 15,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "tasma-man-power",
+          "scope": "Packhouse operation manpower"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "pack-house-other-1",
+      "areaId": "pack-house",
+      "name": "Pack house other 1",
+      "order": 16,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "tasma-man-power",
+          "scope": "Packhouse operation manpower"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "pack-house-other-2",
+      "areaId": "pack-house",
+      "name": "Pack house other 2",
+      "order": 17,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "tasma-man-power",
+          "scope": "Packhouse operation manpower"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "palletizer-warehouse",
+      "areaId": "palletizer-warehouse",
+      "name": "Palletizer warehouse",
+      "order": 18,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "tasma-machinery",
+          "scope": "Heavy machinery supply"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "mechanical-workshop",
+      "areaId": "mechanical-workshop",
+      "name": "Mechanical Workshop",
+      "order": 19,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "dn",
+          "scope": "Ad hoc workers"
+        },
+        {
+          "contractorId": "sanu",
+          "scope": "Maintenance labour supply"
+        },
+        {
+          "contractorId": "tasma-international-travels",
+          "scope": "Crew cab for maintenance"
+        },
+        {
+          "contractorId": "dabare",
+          "scope": "Ad hoc labour supply"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "electrical-workshop-own",
+      "areaId": "electrical-workshop",
+      "name": "Electrical Workshop (Own)",
+      "order": 20,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "ranaweera-electrical",
+          "scope": "Electricians supply (ad hoc)"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "electrical-workshop-tpe",
+      "areaId": "electrical-workshop",
+      "name": "Electrical Workshop (TPE)",
+      "order": 21,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "ranaweera-electrical",
+          "scope": "Lighting maintenance, motor winding, JLG"
+        },
+        {
+          "contractorId": "msn-engineering",
+          "scope": "AC maintenance"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "shift-room",
+      "areaId": "shift-room",
+      "name": "Shift room",
+      "order": 22,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [],
+      "active": true
+    },
+    {
+      "id": "lsrt-1",
+      "areaId": "lsrt",
+      "name": "LSRT 1",
+      "order": 23,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "aplwa",
+          "scope": "LSRT manpower: rail track and maintenance"
+        },
+        {
+          "contractorId": "s-t",
+          "scope": "Transport for rail track maintenance, rail wagon repairing"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "lsrt-2",
+      "areaId": "lsrt",
+      "name": "LSRT 2",
+      "order": 24,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "aplwa",
+          "scope": "LSRT manpower: rail track and maintenance"
+        },
+        {
+          "contractorId": "s-t",
+          "scope": "Transport for rail track maintenance, rail wagon repairing"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "maintenance-stores",
+      "areaId": "maintenance-stores",
+      "name": "Maintenance Stores",
+      "order": 25,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [],
+      "active": true
+    },
+    {
+      "id": "main-stores",
+      "areaId": "main-stores",
+      "name": "Main stores",
+      "order": 26,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "tasma-man-power",
+          "scope": "Main stores operation assistant"
+        },
+        {
+          "contractorId": "m-s-enterprises",
+          "scope": "Material and goods delivery from Colombo and suburbs"
+        },
+        {
+          "contractorId": "dn-construction",
+          "scope": "Stores management"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "pump-house",
+      "areaId": "pump-house",
+      "name": "Pump house",
+      "order": 27,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "dilrukshi-enterprises",
+          "scope": "Maintenance of water distribution line"
+        },
+        {
+          "contractorId": "ut",
+          "scope": "Repairs: pump house, plant water line, airline, Mee Oya pump station"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "training-center",
+      "areaId": "training-center",
+      "name": "Training center",
+      "order": 28,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "aplwa",
+          "scope": "Ad hoc labour supply"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "cement-lab",
+      "areaId": "cement-lab",
+      "name": "Cement Lab",
+      "order": 29,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "tasma-man-power",
+          "scope": "Courier, chemical and physical lab helpers, site lab housekeeping"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "site-lab",
+      "areaId": "site-lab",
+      "name": "Site lab",
+      "order": 30,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "tasma-man-power",
+          "scope": "Courier, chemical and physical lab helpers, site lab housekeeping"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "transport-parking-area",
+      "areaId": "transport-parking-area",
+      "name": "Transport parking area",
+      "order": 31,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "east-west-transport",
+          "scope": "Employee pool transport"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "changing-rooms",
+      "areaId": "changing-rooms",
+      "name": "Changing rooms",
+      "order": 32,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "aplwa",
+          "scope": "Gardening, housekeeping and janitorial"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "medical-center",
+      "areaId": "medical-center",
+      "name": "Medical Center",
+      "order": 33,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "patric-holdings",
+          "scope": ""
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "main-canteen",
+      "areaId": "main-canteen",
+      "name": "Main canteen",
+      "order": 34,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "catamaran-food-services-pvt-ltd",
+          "scope": "Food supply"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "scrap-yard",
+      "areaId": "scrap-yard",
+      "name": "Scrap yard",
+      "order": 35,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "kumari",
+          "scope": ""
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "shredder-area",
+      "areaId": "shredder-area",
+      "name": "Shredder area",
+      "order": 36,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "aponsu",
+          "scope": "Site cleaning and delivery unloading"
+        },
+        {
+          "contractorId": "sm-eco",
+          "scope": "Material handling"
+        },
+        {
+          "contractorId": "s-t",
+          "scope": "Welder"
+        },
+        {
+          "contractorId": "aplwa",
+          "scope": "AFR supervisor"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "oil-unloading-bay",
+      "areaId": "oil-unloading-bay",
+      "name": "Oil unloading bay",
+      "order": 37,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "aponsu",
+          "scope": "Forklift"
+        },
+        {
+          "contractorId": "aplwa",
+          "scope": "AFR supervisors, oil unloading, feeding, solvent feeding"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "ali-yard",
+      "areaId": "ali-yard",
+      "name": "Ali yard",
+      "order": 38,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "sm-eco",
+          "scope": "Heavy machinery and waste material handling"
+        },
+        {
+          "contractorId": "new-royalco",
+          "scope": "Heavy machinery and waste material handling"
+        },
+        {
+          "contractorId": "sanu",
+          "scope": "MSW sorting"
+        },
+        {
+          "contractorId": "ds-uplai",
+          "scope": "Material handling"
+        },
+        {
+          "contractorId": "udaya",
+          "scope": "AFR operation"
+        },
+        {
+          "contractorId": "aponsu",
+          "scope": "Biomass reject sorting, tractor, manpower, solar drying"
+        },
+        {
+          "contractorId": "aplwa",
+          "scope": "AFR supervisors"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "in-front-of-plant",
+      "areaId": "in-front-of-plant",
+      "name": "In front of plant",
+      "order": 39,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "csd",
+          "scope": "Security"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "general-administrative-area",
+      "areaId": "general-administrative-area",
+      "name": "General administrative area",
+      "order": 40,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "aplwa",
+          "scope": "Gardening, housekeeping and janitorial"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "project-office",
+      "areaId": "project-office",
+      "name": "Project office",
+      "order": 41,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [
+        {
+          "contractorId": "aplwa",
+          "scope": "Tea maker"
+        }
+      ],
+      "active": true
+    },
+    {
+      "id": "old-electrical-room",
+      "areaId": "old-electrical-room",
+      "name": "Old electrical room",
+      "order": 42,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [],
+      "active": true
+    },
+    {
+      "id": "main-electrical-sub",
+      "areaId": "main-electrical-sub",
+      "name": "Main Electrical Sub",
+      "order": 43,
+      "ownerIds": [],
+      "managerIds": [],
+      "contractors": [],
+      "active": true
+    }
+  ],
+  "contractors": [
+    {
+      "id": "aplwa",
+      "name": "APLWA",
+      "active": true
+    },
+    {
+      "id": "aponsu",
+      "name": "Aponsu",
+      "active": true
+    },
+    {
+      "id": "catamaran-food-services-pvt-ltd",
+      "name": "Catamaran Food Services (Pvt) Ltd",
+      "active": true
+    },
+    {
+      "id": "csd",
+      "name": "CSD",
+      "active": true
+    },
+    {
+      "id": "dabare",
+      "name": "Dabare",
+      "active": true
+    },
+    {
+      "id": "dilrukshi-enterprises",
+      "name": "Dilrukshi Enterprises",
+      "active": true
+    },
+    {
+      "id": "dm",
+      "name": "DM",
+      "active": true
+    },
+    {
+      "id": "dn",
+      "name": "DN",
+      "active": true
+    },
+    {
+      "id": "dn-construction",
+      "name": "DN Construction",
+      "active": true
+    },
+    {
+      "id": "ds-uplai",
+      "name": "DS Uplai",
+      "active": true
+    },
+    {
+      "id": "east-west-transport",
+      "name": "East & West Transport",
+      "active": true
+    },
+    {
+      "id": "hansaka",
+      "name": "Hansaka",
+      "active": true
+    },
+    {
+      "id": "kumari",
+      "name": "Kumari",
+      "active": true
+    },
+    {
+      "id": "m-s-enterprises",
+      "name": "M.S. Enterprises",
+      "active": true
+    },
+    {
+      "id": "manuli",
+      "name": "Manuli",
+      "active": true
+    },
+    {
+      "id": "msn-engineering",
+      "name": "MSN Engineering",
+      "active": true
+    },
+    {
+      "id": "new-royalco",
+      "name": "New Royalco",
+      "active": true
+    },
+    {
+      "id": "patric-holdings",
+      "name": "Patric Holdings",
+      "active": true
+    },
+    {
+      "id": "ranaweera-electrical",
+      "name": "Ranaweera Electrical",
+      "active": true
+    },
+    {
+      "id": "re",
+      "name": "RE",
+      "active": true
+    },
+    {
+      "id": "s-t",
+      "name": "S&T",
+      "active": true
+    },
+    {
+      "id": "sanu",
+      "name": "Sanu",
+      "active": true
+    },
+    {
+      "id": "sd",
+      "name": "SD",
+      "active": true
+    },
+    {
+      "id": "sm-eco",
+      "name": "SM Eco",
+      "active": true
+    },
+    {
+      "id": "tasma-international-travels",
+      "name": "Tasma International Travels",
+      "active": true
+    },
+    {
+      "id": "tasma-machinery",
+      "name": "Tasma Machinery",
+      "active": true
+    },
+    {
+      "id": "tasma-man-power",
+      "name": "Tasma Man Power",
+      "active": true
+    },
+    {
+      "id": "udaya",
+      "name": "Udaya",
+      "active": true
+    },
+    {
+      "id": "ut",
+      "name": "UT",
+      "active": true
+    }
+  ],
+  "checklists": {
+    "crusher-1": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions, Emergency Exit",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extingisher points & no missed fire extingishers at points, Fire safety Measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures,",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable / CCTV condition",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Valid medical certificates are available with all employess",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at hight equipment are inspected & tagged/ Scaffolding Electrical clearance",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required including isolation flow chart/Emergency Response",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abondant lighting fittings & wires, Building Conditions",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Emergency stop switches/pull wire cord in good condition and not access obstructed /isolation provisions not damaged /Avilability of Emergency lights",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "All required gates are closed & locked to avoid unauthorized entry",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "high pressure compressed air is not used for body/cloth cleaning /Compressed gas cylinder storing safety",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Machine guards not removed without having a permission/ V&T safety measures",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "All high risk rotating parts have been guarded except belts guards/ Required Isolation facilities available",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Platforms/ladders/stair cases/hand rails are upto standard level & no damages or by passed",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "No visible chemical/oil spills in the area",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged / Lifting equipment register displayed",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Rail track signal lights available & Manual signal facilities are avaialble./ gates condition (Boom barriers & others)",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "contractor-yard": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions, Emergency Exit",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points/Fire safety measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings/valid medical certificate",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Chemical stored properly/ Spill prevention & labelling standards maintained / Eye washer",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged/tool register maintained",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required/EmergencyPlans",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "CCTV Coverage to the area",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires/Adeqaute illumination in the workshop/Building conditions",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Gas cylinders are properly stored up to standard/Compressed gas cylinder safety / Compatibility of gas storage",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "Local isolators are available for all machines",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "high pressure compressed air is not used for body/cloth cleaning",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Machine guards not removed without having a permission",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "All high risk rotating parts have been guarded except belts guards",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "Forklift,tractor and other vehicles are upto standard/operators trained/other V&T Safety",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged / Lifting equipment register displayed",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Records of conducting daily briefings & Toolbox talks in the area - Each contractor",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "crusher-2": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions, Emergency Exit",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extingisher points & no missed fire extingishers at points, Fire safety Measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures,",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable / CCTV condition",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Valid medical certificates are available with all employess",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at hight equipment are inspected & tagged/ Scaffolding Electrical clearance",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required including isolation flow chart/Emergency Response",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abondant lighting fittings & wires, Building Conditions",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Emergency stop switches/pull wire cord in good condition and not access obstructed /isolation provisions not damaged /Avilability of Emergency lights",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "All required gates are closed & locked to avoid unauthorized entry",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "high pressure compressed air is not used for body/cloth cleaning /Compressed gas cylinder storing safety",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Machine guards not removed without having a permission/ V&T safety measures",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "All high risk rotating parts have been guarded except belts guards/ Required Isolation facilities available",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Platforms/ladders/stair cases/hand rails are upto standard level & no damages or by passed",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "No visible chemical/oil spills in the area",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged / Lifting equipment register displayed",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Rail track signal lights available & Manual signal facilities are avaialble./ gates condition (Boom barriers & others)",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "crusher-other": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions, Emergency Exit",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points/Fire Safety Measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable /CCTV Condition",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Valid medical certificates are available with all employess",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required & Emergency Plans",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abondant lighting fittings & wires, Building Conditions",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Emergency stop switches/pull wire cord in good condition and not access obstructed /isolation provisions not damaged /Avilability of Emergency lights",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "All required gates are closed & locked to avoid unauthorised entry",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "high pressure compressed air is not used for body/cloth cleaning /Compressed air cylinders safety",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Machine guards not removed without having a permission",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "All high risk rotating parts have been guarded except belts guards",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "Daily vehicles inspections are up to date & required actions taken/ No unsafe people movments in the open yard/V& T safety measures",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged / Lifting equipment register displayed",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Repose angles & safe bed heights are maintained in heaps as per standards (LS 45, Coal - 35-40, Gypsum - 30, Laterite - 40-45, clinker - 30-35)",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "raw-mill-1": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions, Emergency Exit",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points/Fire safety measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly/Unsafe WASP Nest/,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable (high noise sign etc)/ CCTV Condition",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers (Specially Ear plugs/muffs)",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings/Valid medical",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Bobcat & other vehicles are checked & safe operation/ V&T Safety measures",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required including isolation flow chart/Emergency Plans",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires/building Conditions",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Emergency stop switches/pull wire cord in good condition and not access obstructed /isolation provisions not damaged /Avilability of Emergency lights",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "All required gates are closed & locked to avoid unauthorized entry",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "high pressure compressed air is not used for body/cloth cleaning /Compressed gas cylinder safety measures",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Machine guards not removed without having a permission/axial fans & blower condition",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "All high risk rotating parts have been guarded except belts guards",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "No visible chemical/oil spills in the area - Grindig media room",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged / Lifting equipment register displayed",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Scaffolding tags/scaffolding pre checklist are in placed correctly",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "raw-mill-2": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions, Emergency Exit",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points/Fire safety measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly/Unsafe WASP Nest/,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable (high noise sign etc)/ CCTV Condition",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers (Specially Ear plugs/muffs)",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings/Valid medical",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Bobcat & other vehicles are checked & safe operation/ V&T Safety measures",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required including isolation flow chart/Emergency Plans",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires/building Conditions",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Emergency stop switches/pull wire cord in good condition and not access obstructed /isolation provisions not damaged /Avilability of Emergency lights",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "All required gates are closed & locked to avoid unauthorized entry",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "high pressure compressed air is not used for body/cloth cleaning /Compressed gas cylinder safety measures",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Machine guards not removed without having a permission/axial fans & blower condition",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "All high risk rotating parts have been guarded except belts guards",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "No visible chemical/oil spills in the area - Grindig media room",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged / Lifting equipment register displayed",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Scaffolding tags/scaffolding pre checklist are in placed correctly",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "kiln-1": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions, Emergency Exit",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extingisher points & no missed fire extingishers at points/Fire safety measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regulary/AC available in rest room)/ Unsafe WASP Nest/Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable (Hot Surfaces & etc.)/CCTV Condition",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers/heat Resistant clothing condition / Emeergency eye washer",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Valid medical certificates available & special medical for hot material exposures",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at hight equipment are inspected & tagged/WOMA gun checklist",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required including isolation flow chart/Emergency Plans",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abondant lighting fittings & wires/Buiding Conditions",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Emergency stop switches/pull wire cord in good condition and not access obstructed /isolation provisions not damaged /Avilability of Emergency lights",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "All required gates are closed & locked to avoid unauthorized entry (gates & lighting system )",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "high pressure compressed air is not used for body/cloth cleaning /Compressed gas cylinder storing safety",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Machine guards not removed without having a permission/ Axail fans & blowers",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "All high risk rotating parts have been guarded except belts guards/ V&T safety",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Platforms/ladders/stair cases/hand rails are upto standard level & no damages or by passed/ All poke holes closed",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "No visible chemical/oil spills in the area/No hot material spillages",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged / Lifting equipment register displayed",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Scaffolding tags/scaffolding pre checklist are in placed correctly",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "kiln-2": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions, Emergency Exit",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extingisher points & no missed fire extingishers at points/Fire safety measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regulary/AC available in rest room)/ Unsafe WASP Nest/Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable (Hot Surfaces & etc.)/CCTV Condition",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers/heat Resistant clothing condition / Emeergency eye washer",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Valid medical certificates available & special medical for hot material exposures",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at hight equipment are inspected & tagged/WOMA gun checklist",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required including isolation flow chart/Emergency Plans",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abondant lighting fittings & wires/Buiding Conditions",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Emergency stop switches/pull wire cord in good condition and not access obstructed /isolation provisions not damaged /Avilability of Emergency lights",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "All required gates are closed & locked to avoid unauthorized entry (gates & lighting system )",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "high pressure compressed air is not used for body/cloth cleaning /Compressed gas cylinder storing safety",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Machine guards not removed without having a permission/ Axail fans & blowers",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "All high risk rotating parts have been guarded except belts guards/ V&T safety",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Platforms/ladders/stair cases/hand rails are upto standard level & no damages or by passed/ All poke holes closed",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "No visible chemical/oil spills in the area/No hot material spillages",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged / Lifting equipment register displayed",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Scaffolding tags/scaffolding pre checklist are in placed correctly",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "coal-ar-feeding": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions, Emergency Exit /.Emergency lights availability",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points / Fire pro system",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable / CCTV Coverage",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings & Valid medical certificates",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Fire Safety measures are properly in place",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required/Energency Plans",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires/Building Conditions",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Emergency stop switches/pull wire cord in good condition and not access obstructed",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "All required gates are closed & locked to avoid unauthorized entry",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "high pressure compressed air is not used for body/cloth cleaning /Compressed gas cylinder storing safety",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Machine guards not removed without having a permission",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "All high risk rotating parts have been guarded except belts guards/ V&T safety measures",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "No visible chemical/oil spills in the area",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged / Lifting equipment register displayed",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Repose angles & safe bed heights are maintained in heaps as per standards (LS 45, Coal - 35-40, Gypsum - 30, Laterite - 40-45, clinker - 30-35)",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "roller-press": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions, Emergency Exit / Emergency lights",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points/Fire safety measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Valid medical certificates are available with all employees",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required including isolation flow chart/Emergency Plans",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires/Building Conditions",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Emergency stop switches/pull wire cord in good condition and not access obstructed",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "All required gates are closed & locked to avoid unauthorized entry",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "Wasp nest protection cauge condition/Wasp nest available/Compressed gas cylinder safety",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Machine guards not removed without having a permission",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "All high risk rotating parts have been guarded except belts guards/ V&T safety",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "No visible chemical/oil spills in the area - Grinding media rooms",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged / Lifting equipment register displayed",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Scaffolding tags/scaffolding pre checklist are in placed correctly",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "cement-mill": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions, Emergency Exit / Emergency lights",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points/Fire safety measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly/ No grinding media/ Cement or dust spillages,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable - High Noise / Ear Muff",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Valid medical certificates are available with all employees",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required including isolation flow charts/Emergency Plans",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires/Building conditions",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Emergency stop switches/pull wire cord in good condition and not access obstructed",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "All required gates are closed & locked to avoid unauthorized entry",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "high pressure compressed air is not used for body/cloth cleaning /Compressed gas cylinder storing safety",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Machine guards not removed without having a permission",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "All high risk rotating parts have been guarded except belts guards/ V&T safety",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "No visible chemical/oil spills in the area - Grinding media rooms",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged / Lifting equipment register displayed",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Scaffolding tags/scaffolding pre checklist are in placed correctly",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "cement-silos-belt": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions, Emergency Exit / Emergency lights",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points/ Fire safety measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable / CCTV Monitoring",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Valid medical certificates are available with all employees",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required/Emergency Plans",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires/Building condition",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Emergency stop switches/pull wire cord in good condition and not access obstructed",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "All required gates are closed & locked to avoid unauthorized entry",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "high pressure compressed air is not used for body/cloth cleaning /Compressed gas cylinder storing safety",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Machine guards not removed without having a permission",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "All high risk rotating parts have been guarded except belts guards/ V&T safety",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "No visible chemical/oil spills in the area/Cement Spills",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All lifting gears/lifting equipment used in the area are checked and tagged / Lifting equipment register displayed",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "WASP nest not avaialble & WASP Cauge condition",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "gantry-yard-crane": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions, Emergency Exit / Emergency light",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points/Fire safety measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers / Place to keep safety harness",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Crane overhead platfrom condition/Communication methods are in placed,Crane cabin condition",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required/Emergency Plans",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked/ CCTV Monitoring from CCR",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires/ gantry yard cladding condition",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Emergency stop switches/pull wire cord in good condition and not access obstructed",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "All required gates are closed & locked to avoid unauthorized entry/ full body harness kept at the entrance",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "high pressure compressed air is not used for body/cloth cleaning /Compressed gas cylinder storing safety",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Demag crane seat,windscreen , brake etc in good condition / Stoppers and limit switiches are placed & functioning/ cabin conidition /V&T safety measures",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "All high risk rotating parts have been guarded except belts guards",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed/ Access to the crane is safe",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "Daily vehicles inspections are up to date & required actions taken/ Daily DEMAG Crane checklist",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All lifting gears/lifting equipment used in the area are checked and tagged / Lifting equipment register displayed",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Repose angles & safe bed heights are maintained in heaps as per standards (LS 45, Coal - 35-40, Gypsum - 30, Laterite - 40-45, clinker - 30-35)",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "pack-house-1": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions, Emergency Exit / Emergency lights",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points/Fire safety measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable / CCTV condition",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers /Spectacles & masks",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings/ valid medical",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Eye wash facilities available",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required including isolation flow chart/Emergency Plans",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires/Building Condition",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Emergency stop switches/pull wire cord in good condition and not access obstructed",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "All required gates are closed & locked to avoid unauthorized entry",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "high pressure compressed air is not used for body/cloth cleaning /Compressed gas cylinder storing",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Machine guards not removed without having a permission",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "All high risk rotating parts have been guarded except belts guards",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "Vehicle isolation process followed. Lorries have parked according to given directions/ Forklifts checked & operators certified/ Other V&T Safety",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged / Lifting equipment register displayed",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Scaffolding tags/scaffolding pre checklist are in placed correctly",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "pack-house-2": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions, Emergency Exit / Emergency lights",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points/Fire safety measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers /Spectacles & masks",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings/ valid medical",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Eye wash facilities available",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required including isolation flow chart/Emergency Plans",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires/Building Condition",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Emergency stop switches/pull wire cord in good condition and not access obstructed",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "All required gates are closed & locked to avoid unauthorized entry",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "high pressure compressed air is not used for body/cloth cleaning /Compressed gas cylinder storing",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Machine guards not removed without having a permission",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "All high risk rotating parts have been guarded except belts guards",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "Vehicle isolation process followed. Lorries have parked according to given directions/ Forklifts checked & operators certified/ Other V&T Safety",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged / Lifting equipment register displayed",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Scaffolding tags/scaffolding pre checklist are in placed correctly",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "pack-house-other-1": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions, Emergency Exit / Emergency lights",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points/Fire safety measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable / CCTV condition",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers /Spectacles & masks",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings/ valid medical",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Eye wash facilities available",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required including isolation flow chart/Emergency Plans",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires/Building Condition",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Emergency stop switches/pull wire cord in good condition and not access obstructed",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "All required gates are closed & locked to avoid unauthorized entry",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "High pressure compressed air is not used for body/cloth cleaning /Compressed gas cylinder storing",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Machine guards not removed without having a permission",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "All high risk rotating parts have been guarded except belts guards",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "Vehicle isolation process followed. Lorries have parked according to given directions/ Forklifts checked & operators certified/ Other V&T Safety",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged / Lifting equipment register displayed",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Scaffolding tags/scaffolding pre-checklist are in place correctly & Lifting equipment / MSDS / Storage",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "pack-house-other-2": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions, Emergency Exit / Emergency lights",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points/Fire safety measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable / CCTV condition",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers /Spectacles & masks",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings/ valid medical",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Eye wash facilities available",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required including isolation flow chart/Emergency Plans",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires/Building Condition",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Emergency stop switches/pull wire cord in good condition and not access obstructed",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "All required gates are closed & locked to avoid unauthorized entry",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "high pressure compressed air is not used for body/cloth cleaning /Compressed gas cylinder storing",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Machine guards not removed without having a permission",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "All high risk rotating parts have been guarded except belts guards",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "Vehicle isolation process followed. Lorries have parked according to given directions/ Forklifts checked & operators certified/ Other V&T Safety",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged / Lifting equipment register displayed",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Scaffolding tags/scaffolding pre checklist are in placed correctly",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "palletizer-warehouse": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions, Emergency Exit",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points/Fire safety mesures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings/ Valid Medical certificates",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "All forklift inspection done/ No defects/ Operators certified,Sepeed limits followed,Seat belt are wearing/other V&T safety",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked, Palatizer LOTO procedures followed.",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires/Building Condition",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "No visible dust spills/damaged cement bags in the area without proper arrangement",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "All required gates are closed & locked to avoid unauthorized entry",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "high pressure compressed air is not used for body/cloth cleaning /Compressed gas cylinder storing safety",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "People movement across vehicle movement areas avoided",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "All high risk rotating parts have been guarded except belts guards",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "Vehicle isolation process followed. Lorries have parked according to given directions",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "Fall prevention/protection methods are used according to given instructions/life line & SRL Inspected./Scaffoldings pre approval",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Eye wash facilities available/emeregency procedures trained",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "mechanical-workshop": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions, Emergency Exit",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points/Fire safety measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings/valid medical certificate",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Chemical stored properly/ Spill prevention & labelling standards maintained",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged/tool register maintained",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required/EmergencyPlans",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires/Adeqaute illumination in the workshop/Building conditions",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Gas cylinders are properly stored up to standard/Compressed gas cylinder safety",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "Local isolators are available for all machines",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "high pressure compressed air is not used for body/cloth cleaning",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Machine guards not removed without having a permission",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "All high risk rotating parts have been guarded except belts guards",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "Forklift,tractor and other vehicles are upto standard/operators trained/other V&T Safety",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged /OH crane access both doors locked",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Scaffolding tags/scaffolding pre checklist are in placed correctly",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "electrical-workshop-own": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions, Emergency Exit",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points/Fire safety measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Valid medical certificates are available with all employees including color blind tests",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required/Emergency Plans",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires/ Adeqaute illumination in the workshop/Building condition",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Gas cylinders are properly stored",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "Local isolators are available for all machines",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "high pressure compressed air is not used for body/cloth cleaning",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Machine guards not removed without having a permission/ all AC outdoor units in standard",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "All high risk rotating parts have been guarded except belts guards",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "All electricinas are met with NVQ qualifications",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged ,OH crane",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Scaffolding tags/scaffolding pre checklist are in placed correctly",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "electrical-workshop-tpe": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions, Emergency Exit",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points/ Fire control measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Valid medical certificates are available with all employees with color blind tests",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Gas cylinders are properly stored",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "Local isolators are available for all machines",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "high pressure compressed air is not used for body/cloth cleaning",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Machine guards not removed without having a permission",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "All high risk rotating parts have been guarded except belts guards",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "MAPP gas precautions ( FA & PPE ) / WI Trained for all the employees",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged / Ladder locked,OH crane condition",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Scaffolding tags/scaffolding pre checklist are in placed correctly",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "shift-room": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions/Emergency Exit",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points/Fire control measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Valid medical certificates are available with all employees.Color blind tests for electricians",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required/ Emergency Plans",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked/ Insulation carpets available",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires/ illumination adequate/Building condition",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Gas cylinders are properly stored/ Compressed air cylinders storing safety",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "Local isolators are available for all machines",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "high pressure compressed air is not used for body/cloth cleaning",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Machine guards not removed without having a permission/ machine guards are standard",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "All high risk rotating parts have been guarded except belts guards",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "Grass cut arround the building/ Vehcile parked safely",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Scaffolding tags/scaffolding pre checklist are in placed correctly",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "lsrt-1": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions/ Emergency Exit",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points/Fire control measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly/ Grass cut arround the workshop,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers ,Rest room is in good condition",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Valid medical certificates are available with all employees",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required/ Emergency Plans",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires/Building construction",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Gas cylinders are properly stored/ Battery charging room is safe/ Compressed gas cylinders storing safety",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "Local isolators are available for all machines/ train isoation is safely",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "high pressure compressed air is not used for body/cloth cleaning",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Machine guards not removed without having a permission",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "All high risk rotating parts have been guarded except belts guards",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed/ Gates locked & required gates available for rail crossing",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "No uncontrolled visible oil/chemical spillages,Oil storage room is safe & up to standards",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Scaffolding tags/scaffolding pre checklist are in placed correctly/ Rail crossing gate siren",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "lsrt-2": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions/ Emergency Exit",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points/Fire control measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly/ Grass cut arround the workshop,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers ,Rest room is in good condition",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Valid medical certificates are available with all employees",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required/Emergency Plans",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires/Building Condition",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Gas cylinders are properly stored/ Battery charging room is safe/Compressed gas cylinders Storing safety",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "Local isolators are available for all machines/ train isoation is safely",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "high pressure compressed air is not used for body/cloth cleaning",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Machine guards not removed without having a permission",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "All high risk rotating parts have been guarded except belts guards",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed/ Gates locked & required gates available for rail crossing",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "No uncontrolled visible oil/chemical spillages,Oil storage room is safe & up to standards",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Scaffolding tags/scaffolding pre checklist are in placed correctly/ Rail crossing gate siren",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "maintenance-stores": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean (grass removed) & no obstructions",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points/ Frie control measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "Tools & equipment have been stored proper way",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Emergency exit doors, assembly points clearly defined & signage displayed",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Non usable rejected equipment are clearly separated and labelled",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires/building condition",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Emergency lights available",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "Tea room is clean and hygienically maintained",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "high pressure compressed air is not used for body/cloth cleaning",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Work permits & JSA are using/Emergency Plans",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "All general purpose outlets are secured with 30mA RCCBs",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "Building is equipped with a main electrical isolation switch",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Emergency doors are opened outside",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "main-stores": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions/Emeregency Exit",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points/Fire control measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Valid medical certificates are available with all employees",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Illumination inside the stores is sufficient",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires/Building Condition",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Gas cylinders are properly stored",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "Have access been controlled for material storage areas",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "Daily vehicle inspections carried out properly & actions executed",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Is safe height maintained in material stocks",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "Spill prevention precautions are established properly",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Eye washers are available & well maintained",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "Required earthing available,MSDS available, Chemical safety standard available",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "pump-house": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions/emergency Exit",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points/other fire preacutions",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Valid medical certificates are available with all employees",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required/emergency Plans",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked, Electrical panels are safe",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires,Building condition",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Tools & equipment have been stored proper way",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "Diesel pump is in running condition, Emergency key availble at the door,weekly pump checklist going on , Required water level maintained in fire water tank",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "Are emergency rescue precautions established for water pits, Working near water conditions",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Machine guards not removed without having a permission",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "All high risk rotating parts have been guarded except belts guards",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "Emergency lights are in working condition",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Safe chemical handling procedures are well established",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "training-center": [
+      {
+        "id": "o01",
+        "text": "Tea room is clean and hygienically maintained & The tea boy has taken food handlers medical",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points/other fire measurs",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings/ emergency plans available?",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Valid medical certificates are available with all employees",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Illumination inside the building is sufficient",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Gas cylinders are properly stored",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "Vehicles have been parked according to the given parking slots",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "Emergency exit doors, assembly points clearly defined & signage displayed",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Access control is available for IT & server room/ Access availble for AC repairs?",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "CO2 suppression system is working in the IT server room",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "No smoking boards are displayed",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All students are wearing required PPEs & training given them regarding the use of high risk tools",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "cement-lab": [
+      {
+        "id": "o01",
+        "text": "Eye washer station is available and properly maintained",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points/Other fire control measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Valid medical certificates are available with all employees",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Illumination inside the building is sufficient",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked & local isolators available",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires/Building condition",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "No smoking boards are displayed",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "Required safety information displayed on equipment (e.g.. Muffle furnace surface information)",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "Emergency exit doors, assembly points clearly defined & signage displayed/ Emergency plans available",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "MSDS are available and properly displayed",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "Chemicals are stored according to the compatibility",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Licensed operators are using the XRF machine/Required licence obtained",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "Local exhaust ventilation system is stored and well maintained",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "Sample points are well identified safe",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Gas cylinders are properly stored",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "site-lab": [
+      {
+        "id": "o01",
+        "text": "Eye washer station is available and properly maintained",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Valid medical certificates are available with all employees",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Illumination inside the building is sufficient",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked & local isolators available",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires/Building condition",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "No smoking boards are displayed",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "Required safety information displayed on equipment (e.g.. Muffle furnace surface information)",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "Emergency exit doors, assembly points clearly defined & signage displayed/ Emergency plans available",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "MSDS are available and properly displayed",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "Chemicals are stored according to the compatibility",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Licensed operators are using the XRF machine/Required licence available",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "Local exhaust ventilation system is stored and well maintained",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "Sample points are well identified safe",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Gas cylinders are properly stored",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "transport-parking-area": [
+      {
+        "id": "o01",
+        "text": "Parking slots are Cleary marked",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points/ Other fire measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Valid medical certificates are available with all employees",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "No smoking boards are displayed",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Illumination of the area is sufficient",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "Required signage are available to indicate the parking direction",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires/Building condition",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Daily vehicles inspections records & maintenance records are carried out properly, All vehicles having GPS,Dash Camera and others",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "All vehicles have been parked according to the given directions",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "Emergency exit doors, assembly points clearly defined & signage displayed",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "All dash cameras are in working condition",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "Proper walk paths are available to segregate People and vehicle",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Speed limits are displayed",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "Drivers are DDT qualified",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All vehicle have undergone 03rd party vehicle inspection",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Availability of convex mirrors to control the blind corners",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "changing-rooms": [
+      {
+        "id": "o01",
+        "text": "Emergency lights are available",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers' at points/other fire control measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "No smoking boards are displayed",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Slippery floors are Cleary displayed and well managed",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "Illumination of the area is sufficient",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires,Building condition",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "Emergency exit doors, assembly points clearly defined & sign ages displayed",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "APLWA WI & required training,PPE conditions of the employees",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "Tractors are properly parked(Check direction and the wheel chocks)",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "Grass cut and removed around the changing rooms",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "All portable power tools & working at height equipment are inspected & tagged(APLWA)",
+        "order": 15,
+        "active": true
+      }
+    ],
+    "medical-center": [
+      {
+        "id": "o01",
+        "text": "Wash rooms are clened frquently according to the given schedule,Drinking water facility & other hygine measures",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extingisher points & no missed fire extingishers at points & fire control measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "waste bins(General & medical) are cleaned & remove waste regulary",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable / Injury register availble",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers / Nurses are certified",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "Nursing staff trained & certified",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "No defects on electrical fitting & connections, No abondant lighting fittings & wires/ AC working in the ward,Illumination & building condition",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "No smoking boards are displayed",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "Is there any programme to identify the life time of the medicine and well maintained",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "Emergency exit doors, assessmbly points clearly defined & signages displayed/Emergency procedures available",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Stretcher available,Ward equipped with required equipment (oxygen etc.)",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "Emergency lights are available",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "Emergency equipment are properly maintained and readily available",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Medicines are stored according to the manufacures reccomendations",
+        "order": 15,
+        "active": true
+      }
+    ],
+    "main-canteen": [
+      {
+        "id": "o01",
+        "text": "Fire blankets are installed in all required locations & other fire control measures",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms and rest rooms are cleaned and properly maintained,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers /personal hygiene of workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Valid medical certificates are available with all employees,Medical Certified by MOH, food handlers medical certificates",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "Waste are segregated and bins are cleaned & remove regularly",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Illumination inside the building is sufficient",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "Cob webs are removed and cleaned",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires All panel boxes & panel rooms are locked/Building condition",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Gas cylinders are properly stored",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "Meet & fish stored separately under required temperature and separate from other pre cooked items",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "Emergency exit doors, assembly points clearly defined & sign ages displayed/Emergency Procedures",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "No smoking boards are displayed",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "Emergency lights are available",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "PPEs free zone area Cleary demarcated",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "Kitchen and storage area is free of rodents",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "Venitilation is satisfied inside the kitchen",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Drainage lines are clean & properly covered",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "scrap-yard": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points/fire hydrants & other fire measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "A proper access control system established",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Valid medical certificates are available with all employees/ Contracor CSMD Qualified",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required/Emergency Plans",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "Rest areas are cleaned & well maintained",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Gas cylinders are properly stored",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "Vehicle isolation process is well practiced at the scrap loading",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "No any additional risks due to scraps stored",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Sufficient illumination in the yard in the night for emeregncy purposes",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "Hazards wastes are properly segregated and stored in a demarcated area",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Scrap material are separated and stored accordingly",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "Risky grass cut, Materials stocked safely, No spillages",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Scaffolding tags/scaffolding pre checklist are in placed correctly",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "shredder-area": [
+      {
+        "id": "o01",
+        "text": "Walk paths are well defined & no obstructions/emergency Exit",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points/fire hydrants & no missed fire extinguishers at points/ Fire fly system in working condition/all fire control measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Valid medical certificates are available with all employees",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at high equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required/Emergency Plans",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires/Building Condition",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Emergency stop switches/pull wire cord in good condition and not access obstructed",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "All required gates are closed & locked to avoid unauthorized entry",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "high pressure compressed air is not used for body/cloth cleaning /Compressed gas cylinder storing",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Machine guards not removed without having a permission",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "All high risk rotating parts have been guarded except belts guards",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "Vehicle isolation process followed during operations",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "Eye washer stations are well maintained",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Scaffolding tags/scaffolding pre checklist are in placed correctly",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "oil-unloading-bay": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points/hydrants & no missed fire extinguishers at points",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Valid medical certificates are available with all employees",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "No smoking boards are displayed",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "MSDS are available and displayed",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "Vehicle isolation process is followed while oil unloading",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Eye washer station is well maintained",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "SDS are available & displayed for chemicals stored in the area",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "Oil spill drainage system well maintained as required",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Safe chemical/oil spillage handling procedures are well established",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "ali-yard": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions/Emergency Exit",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points/fire hydrants & fire measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "A proper access control system established",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Valid medical certificates are available with all employees,Drinking water facility & other hygine measures",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Work permits and JSA are being used when required/Emergency Plans",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "Rest areas are clean & well maintained",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires/Building Construction",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "Machine guards not removed without having a permission",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "All high risk rotating parts have been guarded except belts guards",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "Fire buffer zone well maintained around the yard",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "20ft distance is maintained between two stockpiles",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "Pyrolysis plant operating as safely & enviornment friendly",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "All lifting gears/lifting equipment used in the area checked and tagged",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "SDS available & displayed for AR material & eye washer station is well maintained",
+        "order": 20,
+        "active": true
+      }
+    ],
+    "in-front-of-plant": [
+      {
+        "id": "o01",
+        "text": "Access control system (including barrier gates, main gate & finger print) is active & well practiced",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points/Other fire control measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Valid medical certificates are available with all employees",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "Infrastructure facilities are well maintained in visitor rooms",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Illumination of the area is satisfactory",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "PPEs are maintained (PPEs issuing point) according to the given order (VIP, General visitor & labor)",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires/Building",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Blinds spots in bicycle parking area & main road entering area is well controlled",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "Breathlyzer inspection & record avaialble up to date.",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "Emergency number is working",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Fire detection system is in working condition",
+        "order": 15,
+        "active": true
+      }
+    ],
+    "general-administrative-area": [
+      {
+        "id": "o01",
+        "text": "Walk paths are well defined, cleaned & no obstructions/Emergency Exits",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points & other fire control measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Valid medical certificates are available with all employees",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "Drainage system is cleaned, not water accumilated, covered and no mosquitos",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Illumination of the area is satisfactory",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Risk of blinds spots in roads are well managed",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "Direction boards are available and well maintained",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Emergency assembly points are clearly marked and well maintained",
+        "order": 14,
+        "active": true
+      }
+    ],
+    "project-office": [
+      {
+        "id": "o01",
+        "text": "No smoking boards are available",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points & other fire control measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Illumination of the area is sufficient",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "Emergency exit doors, evacuation paths, assembly points clearly defined & signage displayed",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Tea boy has gone under food handlers medical certificate,Tea boy trained for WI",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "Tea room is clean and hygienically maintained",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "Emergency lights are available in working condition",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Workstations are ergonomically ok",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "All general purpose outlets are secured with 30mA RCCBs",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "Building is equipped with a main electrical isolation switch",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Emergency doors are opened outside",
+        "order": 15,
+        "active": true
+      }
+    ],
+    "old-electrical-room": [
+      {
+        "id": "o01",
+        "text": "No smoking boards are available",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly,Drinking water facility & other hygine measures",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Illumination of the area is sufficient",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "Emergency exit doors, assembly points clearly defined & signage displayed",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "Staircases & all access are in safe condition",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "Emergency doors are opened outside",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "Emergency lights are available in working condition",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "All general purpose outlets are secured with 30mA RCCBs",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "Building is equipped with a main electrical isolation switch",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "Workstations are ergonomically ok",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 15,
+        "active": true
+      }
+    ],
+    "main-electrical-sub": [
+      {
+        "id": "o01",
+        "text": "Walk paths are clean & no obstructions/ Emergency Exit",
+        "order": 1,
+        "active": true
+      },
+      {
+        "id": "o02",
+        "text": "No obstructions for fire extinguisher points & no missed fire extinguishers at points/Other fire control measures",
+        "order": 2,
+        "active": true
+      },
+      {
+        "id": "o03",
+        "text": "Wash rooms, waste bins are cleaned & remove waste regularly",
+        "order": 3,
+        "active": true
+      },
+      {
+        "id": "o04",
+        "text": "Sign boards properly displayed and kept clean and readable",
+        "order": 4,
+        "active": true
+      },
+      {
+        "id": "o05",
+        "text": "Required & suitable (no damaged) PPEs are used by Workers",
+        "order": 5,
+        "active": true
+      },
+      {
+        "id": "o06",
+        "text": "All employees are trained on Work instructions, basic safety induction & required competency trainings",
+        "order": 6,
+        "active": true
+      },
+      {
+        "id": "o07",
+        "text": "Valid medical certificates are available with all employees",
+        "order": 7,
+        "active": true
+      },
+      {
+        "id": "o08",
+        "text": "All portable power tools & working at height equipment are inspected & tagged",
+        "order": 8,
+        "active": true
+      },
+      {
+        "id": "o09",
+        "text": "All panel boxes & panel rooms are locked",
+        "order": 9,
+        "active": true
+      },
+      {
+        "id": "o10",
+        "text": "No defects on electrical fitting & connections, No abundant lighting fittings & wires",
+        "order": 10,
+        "active": true
+      },
+      {
+        "id": "o11",
+        "text": "Platforms/ladders/stair cases/hand rails are up to standard level & no damages or by passed",
+        "order": 11,
+        "active": true
+      },
+      {
+        "id": "o12",
+        "text": "Ventilation & Fire systems are up to required standards level",
+        "order": 12,
+        "active": true
+      },
+      {
+        "id": "o13",
+        "text": "Fire detectors available and well maintained",
+        "order": 13,
+        "active": true
+      },
+      {
+        "id": "o14",
+        "text": "Industrial type covered lights are available",
+        "order": 14,
+        "active": true
+      },
+      {
+        "id": "o15",
+        "text": "Emergency exit doors, evacuation paths, assembly points clearly defined & signage displayed",
+        "order": 15,
+        "active": true
+      },
+      {
+        "id": "o16",
+        "text": "Emergency lights are available in working condition",
+        "order": 16,
+        "active": true
+      },
+      {
+        "id": "o17",
+        "text": "Arc flash kits are readily available and maintained properly",
+        "order": 17,
+        "active": true
+      },
+      {
+        "id": "o18",
+        "text": "Access control is available and access is granted only for authorized persons",
+        "order": 18,
+        "active": true
+      },
+      {
+        "id": "o19",
+        "text": "CPR & first aid instructions are displayed",
+        "order": 19,
+        "active": true
+      },
+      {
+        "id": "o20",
+        "text": "Rubber carpets are available",
+        "order": 20,
+        "active": true
+      }
+    ]
+  },
+  "bands": {
+    "green": 90,
+    "amber": 75
+  }
+}

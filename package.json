@@ -1,0 +1,37 @@
+{
+  "name": "aop-safety-audit",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "deploy": "npm run build && firebase deploy",
+    "seed": "node scripts/seed.mjs",
+    "functions:build": "npm --prefix functions run build"
+  },
+  "dependencies": {
+    "browser-image-compression": "^2.0.2",
+    "dexie": "^4.4.7",
+    "dexie-react-hooks": "^1.1.7",
+    "firebase": "^11.10.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.7",
+    "@types/react": "^18.3.32",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.7.0",
+    "firebase-admin": "^13.10.0",
+    "postcss": "^8.5.34",
+    "tailwindcss": "3.4",
+    "typescript": "5.6",
+    "vite": "^5.4.21",
+    "vite-plugin-pwa": "^0.21.2"
+  }
+}
