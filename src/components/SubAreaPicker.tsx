@@ -13,6 +13,7 @@ export function SubAreaPicker({ onPick }: { onPick: (s: SubArea) => void }) {
   const groups = useMemo(
     () =>
       sortedAreas
+        .filter((a) => a.active !== false)
         .map((a) => ({
           area: a,
           subs: subAreasOf(a.id).filter(

@@ -30,7 +30,7 @@ src/
   lib/          firebase init, identity, scoring, callables, local IndexedDB (drafts/outbox)
   components/   AppShell, SyncBar, RequireRole, pickers, UI kit
   pages/        audit/, area/, admin/, auth/
-functions/src/  Cloud Functions: setupFirstAdmin, createUser, updateUser, resetCredential, onConfigMainUpdated
+functions/src/  Cloud Functions: setupFirstAdmin, createUser, updateUser, resetCredential, onConfigMainUpdated, onAuditVoided
 scripts/seed.mjs  one-time import of plant setup + first safety officer
 seed/aop-seed.json  areas, sub-areas, contractors, observations from the current workbook
 firestore.rules, storage.rules, firestore.indexes.json
@@ -132,7 +132,7 @@ VITE_USE_EMULATORS=true npm run dev
 - [x] **1. Foundation** — auth, roles, links, rules, user functions, PWA shell, workbook import, owner/manager assignment
 - [x] **2. Auditor app** — scoring form, device drafts, photo compression, outbox sync
 - [x] **3. Area owner / manager** — open actions, photo proof, audit view
-- [ ] **4. Safety officer admin** — observation and contractor editor, audit list, view and share
+- [x] **4. Safety officer admin** — observation and contractor editor, audit list, view and share
 - [ ] **5. Dashboard and export** — summary functions, charts, Excel export in the current layout
 - [ ] **6. Site test and handover**
 

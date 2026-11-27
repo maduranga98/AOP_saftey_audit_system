@@ -19,7 +19,7 @@ export function ageDays(ts: unknown): number | null {
   return Math.floor((Date.now() - t.toMillis()) / 86_400_000);
 }
 
-export function ActionRow({ action, to, pending }: { action: ActionDoc; to: string; pending?: boolean }) {
+export function ActionRow({ action, to, pending, closed }: { action: ActionDoc; to: string; pending?: boolean; closed?: boolean }) {
   const age = ageDays(action.raisedAt);
   return (
     <Link to={to} className="flex items-start gap-3 px-4 py-3 hover:bg-slate-50">
@@ -27,8 +27,16 @@ export function ActionRow({ action, to, pending }: { action: ActionDoc; to: stri
       <div className="min-w-0 flex-1">
         <p className="line-clamp-2 text-sm">{action.obsText}</p>
         <p className="mt-0.5 line-clamp-1 text-xs text-slate-500">{action.remark}</p>
-        <p className={cx('mt-0.5 text-xs', pending ? 'font-medium text-sky-700' : age !== null && age > 14 ? 'font-medium text-red-600' : 'text-slate-400')}>
-          {pending ? 'Response waiting to upload' : age === null ? 'Raised just now' : age === 0 ? 'Raised today' : `Open ${age} day${age === 1 ? '' : 's'}`}
+        <p className={cx('mt-0.5 text-xs', closed ? 'font-medium text-green-700' : pending ? 'font-medium text-sky-700' : age !== null && age > 14 ? 'font-medium text-red-600' : 'text-slate-400')}>
+          {closed
+            ? `Closed${action.response?.byName ? ` by ${action.response.byName}` : ''}`
+            : pending
+              ? 'Response waiting to upload'
+              : age === null
+                ? 'Raised just now'
+                : age === 0
+                  ? 'Raised today'
+                  : `Open ${age} day${age === 1 ? '' : 's'}`}
         </p>
       </div>
       <ChevronRightIcon className="mt-1 shrink-0 text-slate-400" />
